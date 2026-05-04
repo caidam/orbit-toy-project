@@ -12,3 +12,8 @@ Fixed P2: `divide` now raises `ValueError` on `b == 0`. `test_divide_by_zero` pa
 
 cycle 2: fixed divide (6/8 tests now passing)
 
+## Cycle 3 — 2026-05-04
+Fixed P3: `average` now raises `ValueError` on empty input. `test_average_empty` passes; 7/8 tests passing. P4 remains.
+
+cycle 3: fixed average (7/8 tests now passing)
+
