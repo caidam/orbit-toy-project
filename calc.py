@@ -14,7 +14,9 @@ def multiply(a, b):
 
 
 def divide(a, b):
-    return a / b  # BUG: no zero division handling
+    if b == 0:
+        raise ValueError("cannot divide by zero")
+    return a / b
 
 
 def average(numbers):
