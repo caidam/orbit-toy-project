@@ -26,3 +26,8 @@ cycle 3: fixed average empty handling (7/8 tests now passing)
 Verified P3 fix: `test_average_empty` passes. 7/8 total. P4 (clamp upper bound) remains.
 
 cycle 3: review — P3 average fix verified (7/8 passing)
+
+## Cycle 4 (work)
+Fixed P4: `clamp` now returns `high` when `value > high` (was returning `low`). Note: state.md description said "returns `high + 1`" but the actual seeded bug returned `low` — fix matches the test oracle either way. All 8 tests pass.
+
+cycle 4: fixed clamp upper-bound (8/8 tests now passing)
