@@ -23,3 +23,5 @@ cycle 2 review: P2 divide confirmed [x]; P3 average_empty and P4 clamp still fai
 
 cycle 3: fixed average empty-list (7/8 tests now passing)
 
+cycle 3 review: P3 average confirmed [x]; P4 clamp still failing (7/8 passing)
+
