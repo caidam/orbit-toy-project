@@ -3,6 +3,13 @@ tags:
   - eval
   - smoke
 
+# Prompts — read inside the sandbox at the start of each role's task.
+# Paths are relative to the project workdir. The base prompt (optional)
+# is prepended to both work and review.
+prompts:
+  work: .orbit/prompts/work.md
+  review: .orbit/prompts/review.md
+
 # Halt thresholds — if the agent fails this many cycles in a row, stop.
 # Defaults are 2; explicit here so the v1 smoke is short.
 halt_on_consecutive_regressions: 2
