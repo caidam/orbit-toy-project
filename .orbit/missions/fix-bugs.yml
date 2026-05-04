@@ -12,11 +12,13 @@ prompts:
 
 # Halt thresholds.
 #
-# `task_failures` ticks every time a task's exit code is non-zero. For
-# fix-bugs, that's *every* cycle until pytest passes — so the bound has
-# to leave room for one cycle per bug. 4 bugs × 2 tasks/cycle = 8 + a
-# little headroom for a retry per priority = 10.
-halt_on_consecutive_regressions: 2
+# Both regressions and task_failures tick every cycle the oracle isn't
+# clean, regardless of whether the agent made progress. For fix-bugs,
+# that's *every* cycle until pytest passes — so both bounds need
+# headroom for one cycle per bug + retries.
+# 4 bugs × 2 tasks/cycle = 8 + a couple of retries = 10. Apply the
+# same bound to both counters.
+halt_on_consecutive_regressions: 10
 halt_on_consecutive_task_failures: 10
 
 # stop_after omitted on purpose — pass --stop-after HH:MM at the CLI
