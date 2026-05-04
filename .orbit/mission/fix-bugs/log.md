@@ -9,3 +9,9 @@ Branch: sandbox/test-lima-1/mission-fix-bugs-20260504-1741
 
 cycle 1: fixed multiply (5/8 tests now passing)
 
+## Cycle 2 (work)
+- Fixed P2: `divide` now raises `ValueError` when `b == 0`.
+- `uv run pytest -v`: `test_divide_by_zero` passes (6/8 total now passing); P3/P4 still failing as expected.
+
+cycle 2: fixed divide-by-zero (6/8 tests now passing)
+
