@@ -15,3 +15,6 @@ Branch: sandbox/test-lima-1/mission-fix-bugs-20260504-1632
 - `test_divide` and `test_divide_by_zero` pass; 6/8 total pass (P3/P4 still pending as expected).
 - Marked P2 done in state.md.
 
+## Cycle 2 (review)
+- cycle 2: fixed divide (6/8 tests now passing); P3/P4 still failing.
+
