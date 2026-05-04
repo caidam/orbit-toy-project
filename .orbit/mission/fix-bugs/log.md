@@ -7,3 +7,6 @@ Branch: sandbox/test-lima-1/mission-fix-bugs-20260504-1632
 - `test_multiply` passes; 5/8 total pass (P2/P3/P4 still pending as expected).
 - Marked P1 done in state.md.
 
+## Cycle 1 (review)
+- cycle 1: fixed multiply (5/8 tests now passing); P2/P3/P4 still failing.
+
