@@ -20,10 +20,12 @@ def divide(a, b):
 
 
 def average(numbers):
+    if len(numbers) == 0:
+        raise ValueError("Cannot compute average of empty list")
     total = 0
     for n in numbers:
         total += n
-    return total / len(numbers)  # BUG: empty list crashes
+    return total / len(numbers)
 
 
 def clamp(value, low, high):

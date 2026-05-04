@@ -17,3 +17,9 @@ cycle 2: fixed divide-by-zero (6/8 tests now passing)
 
 cycle 2 review: P2 divide confirmed [x]; P3 average_empty and P4 clamp still failing (6/8 passing)
 
+## Cycle 3 (work)
+- Fixed P3: `average` now raises `ValueError` when given an empty list.
+- `uv run pytest -v`: `test_average_empty` passes (7/8 total now passing); P4 clamp still failing as expected.
+
+cycle 3: fixed average empty-list (7/8 tests now passing)
+
