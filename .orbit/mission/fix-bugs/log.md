@@ -20,3 +20,9 @@ cycle 2: fixed divide zero-division (6/8 tests now passing)
 - State unchanged; P2 already `[x]`. Not stuck, not complete — continue.
 
 cycle 2: review — divide fix verified (6/8 passing, P3/P4 remain)
+
+## Cycle 3 (work)
+- Fixed P3: `average` raises `ValueError` on empty input.
+- `test_average_empty` passes; P4 remains (7/8 passing).
+
+cycle 3: fixed average empty list (7/8 tests now passing)
