@@ -11,8 +11,10 @@ that's the oracle.
   `ValueError` on `b == 0`)
 - [x] **P3** — Fix `average` (empty list crashes — should raise
   `ValueError` on empty input)
-- **P4** — Fix `clamp` (returns `high + 1` instead of `high` when
+- [x] **P4** — Fix `clamp` (returns `high + 1` instead of `high` when
   `value > high`)
+
+HALTED: complete
 
 ## Drift rails
 

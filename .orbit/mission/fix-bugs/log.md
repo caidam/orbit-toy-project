@@ -25,3 +25,12 @@ cycle 3: fixed average empty-list (7/8 tests now passing)
 
 cycle 3 review: P3 average confirmed [x]; P4 clamp still failing (7/8 passing)
 
+## Cycle 4 (work)
+- Fixed P4: `clamp` now returns `high` when `value > high` (was returning `low`).
+  Note: state.md described the bug as "returns `high + 1`" but the actual seeded
+  bug was `return low`; both descriptions point at the same correct fix.
+- `uv run pytest -v`: all 8 tests pass.
+- Marked P4 [x] and added `HALTED: complete` to state.md.
+
+cycle 4: fixed clamp (8/8 tests now passing) — mission complete
+
