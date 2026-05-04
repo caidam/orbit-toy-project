@@ -17,3 +17,8 @@ Fixed P3: `average` now raises `ValueError` on empty input. `test_average_empty`
 
 cycle 3: fixed average (7/8 tests now passing)
 
+## Cycle 4 — 2026-05-04
+Fixed P4: `clamp` now returns `high` (not `low`) when `value > high`. `test_clamp` passes; all 8 tests pass. Mission complete.
+
+cycle 4: fixed clamp (8/8 tests now passing)
+
