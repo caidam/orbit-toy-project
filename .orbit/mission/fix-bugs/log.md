@@ -16,3 +16,8 @@ cycle 2: fixed divide zero handling (6/8 tests now passing)
 
 ## Cycle 2 (review)
 Verified P2 fix: `test_divide_by_zero` passes. 6/8 total. P3 (average empty) and P4 (clamp upper bound) remain.
+
+## Cycle 3 (work)
+Fixed P3: `average` now raises `ValueError` on empty input. `test_average_empty` passes; 7/8 total. Remaining: P4 (clamp upper bound).
+
+cycle 3: fixed average empty handling (7/8 tests now passing)
