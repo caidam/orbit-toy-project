@@ -10,3 +10,8 @@ Branch: sandbox/test-lima-1/mission-fix-bugs-20260504-1632
 ## Cycle 1 (review)
 - cycle 1: fixed multiply (5/8 tests now passing); P2/P3/P4 still failing.
 
+## Cycle 2 (work)
+- Fixed P2: `divide` now raises `ValueError` when `b == 0`.
+- `test_divide` and `test_divide_by_zero` pass; 6/8 total pass (P3/P4 still pending as expected).
+- Marked P2 done in state.md.
+
