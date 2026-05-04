@@ -15,3 +15,5 @@ cycle 1: fixed multiply (5/8 tests now passing)
 
 cycle 2: fixed divide-by-zero (6/8 tests now passing)
 
+cycle 2 review: P2 divide confirmed [x]; P3 average_empty and P4 clamp still failing (6/8 passing)
+
