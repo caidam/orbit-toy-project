@@ -13,3 +13,9 @@ cycle 1: fixed multiply (5/8 tests now passing)
 - `test_divide_by_zero` passes; `test_divide` still passes. 6/8 total. Remaining: P3 (`test_average_empty`), P4 (`test_clamp`).
 
 cycle 2: fixed divide zero-handling (6/8 tests now passing)
+
+## Cycle 2 (review)
+- Oracle confirms P2: `test_divide_by_zero` passes; state.md `[x] P2` is correct.
+- Remaining failures: `test_average_empty` (P3), `test_clamp` (P4). Not stuck — P2 was first attempted this cycle and succeeded.
+
+cycle 2 review: P2 divide confirmed fixed (6/8 passing); P3, P4 remaining
