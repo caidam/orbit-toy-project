@@ -6,7 +6,7 @@ that's the oracle.
 
 ## Priorities
 
-- **P1** — Fix `multiply` (off-by-one: returns `a * b + 1`)
+- [x] **P1** — Fix `multiply` (off-by-one: returns `a * b + 1`)
 - **P2** — Fix `divide` (no zero-division handling — should raise
   `ValueError` on `b == 0`)
 - **P3** — Fix `average` (empty list crashes — should raise
