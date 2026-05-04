@@ -1,0 +1,30 @@
+# Python build artifacts
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# Virtual envs (uv / pip / poetry)
+.venv/
+venv/
+env/
+
+# Test/coverage caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Orbit local state — never ship to a shared git repo
+.orbit/secrets/
+.orbit/sessions/
+.orbit/.uploaded.*

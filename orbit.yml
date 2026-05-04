@@ -1,0 +1,53 @@
+# orbit.yml — project configuration for orbit tools
+
+sandbox:
+  # How to get the project into the sandbox
+  #
+  # Method "copy" — tars local files into the VM (default):
+  source:
+    method: copy  # copy | git-clone
+  #
+  # Method "git-clone" — clones a repo inside the VM:
+  # source:
+  #   method: git-clone
+  #   repo: https://github.com/user/repo.git
+  #   branch: main                # optional, default: main
+  #   protected_branches:         # branches the agent cannot push to
+  #     - main
+  #     - production
+
+  # Environment setup
+  runtime:
+    python: "3.12"
+    setup:
+      - uv sync
+
+  # Test oracle — exit 0 = pass, non-zero = fail
+  oracle:
+    check: uv run pytest -v
+
+  # VM resources (defaults: 2 CPUs, 2GiB)
+  resources:
+    cpus: 2
+    memory: "2GiB"
+
+  # Agent tool for autonomous sessions
+  agent:
+    tool: claude-code
+
+  # Branch naming for agent commits (enforced by pre-push hook with git-clone)
+  branch_prefix: sandbox/
+
+observe:
+  name: toy-project
+  track:
+    - oracle
+    - agent
+    - metrics
+  metrics:
+    - name: test-results
+      description: "Pytest pass/fail counts"
+      command: "uv run pytest --tb=no -q 2>&1 | tail -1"
+    - name: bug-count
+      description: "Count of BUG comments in calc.py"
+      command: "python3 -c \"import json; bugs=open('calc.py').read().count('BUG'); print(json.dumps({'bugs_remaining': bugs, 'total_functions': 6}))\""
