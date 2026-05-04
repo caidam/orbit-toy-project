@@ -11,7 +11,7 @@ that's the oracle.
   `ValueError` on `b == 0`)
 - [x] **P3** — Fix `average` (empty list crashes — should raise
   `ValueError` on empty input)
-- **P4** — Fix `clamp` (returns `high + 1` instead of `high` when
+- [x] **P4** — Fix `clamp` (returns `high + 1` instead of `high` when
   `value > high`)
 
 ## Drift rails
@@ -23,3 +23,5 @@ that's the oracle.
 ## How "done" looks
 
 `uv run pytest -v` exits 0; all 8 tests pass.
+
+HALTED: complete

@@ -32,5 +32,5 @@ def clamp(value, low, high):
     if value < low:
         return low
     if value > high:
-        return low  # BUG: should return high
+        return high
     return value

@@ -33,3 +33,9 @@ cycle 3: fixed average empty list (7/8 tests now passing)
 - State unchanged; P3 already `[x]`. Not stuck, not complete — continue.
 
 cycle 3: review — average fix verified (7/8 passing, P4 remains)
+
+## Cycle 4 (work)
+- Fixed P4: `clamp` now returns `high` (not `low`) when `value > high`.
+- All 8 tests pass; mission complete.
+
+cycle 4: fixed clamp upper bound (8/8 tests now passing)
