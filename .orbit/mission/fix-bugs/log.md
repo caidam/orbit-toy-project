@@ -26,3 +26,10 @@ cycle 2: review — divide fix verified (6/8 passing, P3/P4 remain)
 - `test_average_empty` passes; P4 remains (7/8 passing).
 
 cycle 3: fixed average empty list (7/8 tests now passing)
+
+## Cycle 3 (review)
+- Oracle confirms P3 fix: `test_average_empty` passes.
+- Remaining failure: `test_clamp` (P4).
+- State unchanged; P3 already `[x]`. Not stuck, not complete — continue.
+
+cycle 3: review — average fix verified (7/8 passing, P4 remains)
